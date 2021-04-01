@@ -1,23 +1,27 @@
 function viewNumbers(){
-    let productNumbers = localStorage.getItem('cartNumbers');
-
-    
-    if (productNumbers!=null){
-        productNumbers = parseInt(productNumbers);
-        document.getElementById('item_length').innerText = productNumbers;
+  
+    if (localStorage.getItem('cartNumbers')==null){
+      
+      localStorage.setItem('cartNumbers',0);
+      
+      document.getElementById('item_length').innerText = 0;
     }
     else{
-        document.getElementById('item_length').innerText = 0;
+      let productNumbers = localStorage.getItem('cartNumbers');
+
+      productNumbers = parseInt(productNumbers);
+        
+      document.getElementById('item_length').innerText = productNumbers;
+
     }
+    
+  
     LoadPic();
 }
 
 
 function updateNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
-
-    
-
     if (productNumbers!=null){
         productNumbers = parseInt(productNumbers);
         localStorage.setItem('cartNumbers', productNumbers + 1);   
