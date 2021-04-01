@@ -1,9 +1,9 @@
 function viewNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
-    productNumbers = parseInt(productNumbers);
-
-    if (productNumbers){
+    
+    if (productNumbers!=null){
+        productNumbers = parseInt(productNumbers);
         document.getElementById('item_length').innerText = productNumbers;
     }
     else{
@@ -16,9 +16,10 @@ function viewNumbers(){
 function updateNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers');
 
-    productNumbers = parseInt(productNumbers);
+    
 
-    if (productNumbers !=null){
+    if (productNumbers!=null){
+        productNumbers = parseInt(productNumbers);
         localStorage.setItem('cartNumbers', productNumbers + 1);   
         }
     else{
