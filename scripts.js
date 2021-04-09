@@ -40,7 +40,7 @@ function LoadPic(){
     if(localStorage.getItem('glazing')=='None'){
       
       document.getElementById("demo").setAttribute("src", "images/none-original.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['1','None']);
         localStorage.setItem("cart", input); 
@@ -54,7 +54,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Sugar_milk'){
       document.getElementById("demo").setAttribute("src", "images/sugar-milk-original.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['1','Sugar_milk']);
         localStorage.setItem("cart", input); 
@@ -67,7 +67,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Vanilla_milk'){
       document.getElementById("demo").setAttribute("src", "images/vanilla-milk-original.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['1','Vanilla_milk']);
         localStorage.setItem("cart", input); 
@@ -80,7 +80,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Double_chocolate'){
       document.getElementById("demo").setAttribute("src", "images/chocolate-original.PNG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['1','Double_chocolate']);
         localStorage.setItem("cart", input); 
@@ -95,20 +95,20 @@ function LoadPic(){
   else if(localStorage.getItem('size')=='3'){
     if(localStorage.getItem('glazing')=='None'){
       document.getElementById("demo").setAttribute("src", "images/none-original-3.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['3','None']);
         localStorage.setItem("cart", input); 
       }
       else {
-        input = Array.new;
+        var input = Array.new;
         input.push(['3','None']);
         localStorage.setItem("cart", input); 
       }
     }
     else if(localStorage.getItem('glazing')=='Sugar_milk'){
       document.getElementById("demo").setAttribute("src", "images/sugar-milk-original-3.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['3','Sugar_milk']);
         localStorage.setItem("cart", input); 
@@ -121,7 +121,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Vanilla_milk'){
       document.getElementById("demo").setAttribute("src", "images/vanilla-milk-original-3.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['3','Vanilla_milk']);
         localStorage.setItem("cart", input); 
@@ -134,7 +134,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Double_chocolate'){
       document.getElementById("demo").setAttribute("src", "images/chocolate-original-3.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['3','Double_chocolate']);
         localStorage.setItem("cart", input); 
@@ -149,7 +149,7 @@ function LoadPic(){
   else if (localStorage.getItem('size')=='6'){
     if(localStorage.getItem('glazing')=='None'){
       document.getElementById("demo").setAttribute("src", "images/none-original-6.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['6','None']);
         localStorage.setItem("cart", input); 
@@ -162,7 +162,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Sugar_milk'){
       document.getElementById("demo").setAttribute("src", "images/sugar-milk-original-6.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['6','Sugar_milk']);
         localStorage.setItem("cart", input); 
@@ -175,7 +175,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Vanilla_milk'){
       document.getElementById("demo").setAttribute("src", "images/vanilla-milk-original-6.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['6','Vanilla_milk']);
         localStorage.setItem("cart", input); 
@@ -188,7 +188,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Double_chocolate'){
       document.getElementById("demo").setAttribute("src", "images/chocolate-original-6.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['6','Double_chocolate']);
         localStorage.setItem("cart", input); 
@@ -203,7 +203,7 @@ function LoadPic(){
   else if (localStorage.getItem('size')=='12'){
     if(localStorage.getItem('glazing')=='None'){
       document.getElementById("demo").setAttribute("src", "images/none-original-12.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['12','None']);
         localStorage.setItem("cart", input); 
@@ -216,7 +216,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Sugar_milk'){
       document.getElementById("demo").setAttribute("src", "images/sugar-milk-original-12.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['12','Sugar_milk']);
         localStorage.setItem("cart", input); 
@@ -229,7 +229,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Vanilla_milk'){
       document.getElementById("demo").setAttribute("src", "images/vanilla-milk-original-12.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['12','Vanilla_milk']);
         localStorage.setItem("cart", input); 
@@ -242,7 +242,7 @@ function LoadPic(){
     }
     else if(localStorage.getItem('glazing')=='Double_chocolate'){
       document.getElementById("demo").setAttribute("src", "images/chocolate-original-12.JPG");
-      if (localStorage.getItem("cart")!=nil){
+      if (localStorage.getItem("cart")!=null){
         input = localStorage.getItem("cart");
         input.push(['12','Double_chocolate']);
         localStorage.setItem("cart", input); 
