@@ -331,7 +331,7 @@ if( cartItems && productContainer ){
 deleteButtons();
 }
 
-// change the size based on user input
+// change the size based on user input in product detail page
 function changeSize1(){
 localStorage.setItem('size', '1');
 location.reload();
@@ -352,7 +352,7 @@ localStorage.setItem('size', '12');
 location.reload();
 }
 
-// change the glazing based on user input
+// change the glazing based on user input in product detail page
 function changeGlazing1(){
 localStorage.setItem('glazing', 'None');
 location.reload();
