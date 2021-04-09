@@ -1,3 +1,4 @@
+// the function to display the number of items in the cart for each HTML page
 function viewNumbers(){
   
   if (localStorage.getItem('cartNumbers')!=null){
@@ -18,7 +19,7 @@ function viewNumbers(){
   }
 }
 
-
+// the function to update the number of items in the cart if the user hit add to cart button in detail page
 function updateNumbers(){
   let productNumbers = localStorage.getItem('cartNumbers');
   if (productNumbers!=null){
@@ -35,6 +36,7 @@ function updateNumbers(){
   addToCart(products[productIndex]);
 }
 
+// a list of products information
 let products = [
 {
   name: "Original",
@@ -170,6 +172,7 @@ let products = [
 
 ];
 
+// load the picture in the product detail page
 function LoadPic(){
 
 if(localStorage.getItem('size')=='1'){
@@ -248,6 +251,7 @@ else if (localStorage.getItem('size')=='12'){
 }
 
 // learn from https://www.youtube.com/watch?v=tEAl7L62GEw&t=20s
+// add the selected item in product detail page into the shopping cart
 function addToCart(product){
 let cartItems = localStorage.getItem('productsInCart');
 cartItems = JSON.parse(cartItems);
@@ -271,6 +275,7 @@ if (cartItems != null){
 localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
+// delete the item from the shopping cart in the cart.html page
 function deleteButtons(){
 let deleteButtons = document.querySelectorAll('.delete');
 let productName;
@@ -295,13 +300,14 @@ for(let i = 0; i < deleteButtons.length; i++){
 
 
 // learn from https://www.youtube.com/watch?v=IY5UN82FZ2Q
+// show all the added items in the shopping cart in cart.html page
 function displayCart(){
 viewNumbers();
 let cartItems = localStorage.getItem("productsInCart");
 cartItems = JSON.parse(cartItems);
 let productContainer = document.querySelector(".products-container");
 
-
+// using the innerHTML concept to input a new block of information into the cart.html page
 if( cartItems && productContainer ){
   productContainer.innerHTML = '';
   Object.values(cartItems).map(item => {
@@ -325,6 +331,7 @@ if( cartItems && productContainer ){
 deleteButtons();
 }
 
+// change the size based on user input
 function changeSize1(){
 localStorage.setItem('size', '1');
 location.reload();
@@ -345,6 +352,7 @@ localStorage.setItem('size', '12');
 location.reload();
 }
 
+// change the glazing based on user input
 function changeGlazing1(){
 localStorage.setItem('glazing', 'None');
 location.reload();
